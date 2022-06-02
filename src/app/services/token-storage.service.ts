@@ -23,8 +23,8 @@ export class TokenStorageService {
     return localStorage.getItem(TOKEN_KEY);
   }
   public saveRefreshToken(token: string): void {
-    localStorage.removeItem(USER_KEY);
-    localStorage.setItem(USER_KEY, token);
+    localStorage.removeItem(REFRESHTOKEN_KEY);
+    localStorage.setItem(REFRESHTOKEN_KEY, token);
   }
   public getRefreshToken(): string | null{
     return localStorage.getItem(REFRESHTOKEN_KEY);
